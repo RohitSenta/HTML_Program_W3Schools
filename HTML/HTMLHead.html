@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page -  Head</title>
+        <link rel="icon" type="image/x-icon" href="LigthOn.png">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="Decription" content="Free web tutorials">
+        <meta name="Auther" content="John Doe">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {
+                color:black;
+                background-color: brown;
+                border: 3px inset black;
+            }
+        </style>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello JavaScript";
+            }
+        </script>
+        <base href="https://www.w3schools.com/" target="_blank">
+
+    </head>
+
+    <body>
+        <h1>HTML - Head</h1>
+
+        <h2>
+            The HTML HEAD element is a container for the following elements like:<br>
+             TITLE, STYLE, META, LINK, SCRIPT and BASE.
+        </h2>
+        <hr><hr><hr><br>
+
+
+        <div style="background-color: rgba(86, 196, 255, 0.521); font-size:large;">
+            The HEAD element is a container for metadata (data about data) and is placed between the HTML tag and the BODY tag.<br>
+            HTML metadata is data about the HTML document. Metadata is not displayed.<br>
+            Metadata typically define the document title, character set, styles, scripts, and other meta information.<br>
+        </div>
+        <br>
+        <hr>
+
+
+        <h2>
+            <h3>Title Element</h3>
+            Head - Title Element - it is use for give title to a web page we already title is given inside Head Element.
+        </h2>
+        <hr>
+
+
+        <h2>
+            <h3>Style Element</h3>
+            Head - Style Element is use for give style to other elements here we given style to h1 teg.
+        </h2>
+        <hr>
+
+
+        <h2>
+            <h3>Link Element</h3>
+            Head - Link Element is use for give link for Favicon or other use here we used link to give favicon of our web page.
+        </h2>
+        <hr>
+
+        
+        <h2>
+            <h3>Meta Element</h3>
+            Head - Meta Element is use for give differnt information to browser. <br>
+            Meta elemet have different Attributes,<br>
+            Here we used different Meta Attributes like: <br>
+            1. charset = "UTF-8", That gives a character set information.<br>
+            2. name, content = it is give keywords to seaech engine like "HTML, CSS, JavaScript"<br>
+            3. name, content = also give Discription like "Free web tutorials",<br>
+            and it is also give some other imformation like auther.<br>
+            4. http-equiv, content = refresh browser every time cycle that you give in content,<br>
+            we given here 30 seconds.<br>
+            5. name, content = "viewport", width=device-width, initial-scale=1.0, <br>
+            setting viewport to make your webset looks good in all devices.
+        </h2>
+        <hr>
+
+        
+        <h2>
+            <h3>Script Element</h3>
+            Head - script Element is use for give JavaScript function in the web page, we used JS function as myFunction for change text.
+            <p id="demo">Hello World !</p>
+            <button type="button" onclick="myFunction()">Click Me !</button>
+        </h2>
+        <hr>
+
+
+        <h2>
+            <h3>Base Element</h3>
+            Head - Base Element is specifies the base URL and/or target for all relative URLs in a page.<br>
+            The Base tag must have either an href or a target attribute present, or both.<br>
+            There can only be one single Base element in a document!<br>
+        </h2>
+        <hr>
+
+    </body>
+</html>

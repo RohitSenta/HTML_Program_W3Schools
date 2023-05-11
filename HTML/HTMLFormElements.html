@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Web Page - Form Elements</title>
+        <link rel="icon" href="FaviconR.ico">
+    </head>
+    <body>
+        <h1>HTML Forms - Form Elements</h1>
+        <hr><hr>
+
+        <h2>Different Form Elements : </h2>
+        <div>
+            <ol>
+                <li>Input</li>
+                <li>Label</li>
+                <li>Select</li>
+                <li>TextArea</li>
+                <li>Button</li>
+                <li>Fieldset</li>
+                <li>Legend</li>
+                <li>Detailist</li>
+                <li>Output</li>
+                <li>Option</li>
+                <li>OptGroup</li>
+            </ol>
+        </div>
+        <hr>
+
+        <h2>Form - Input and Label Element</h2>
+        <form action="#">
+            <label for="Name">Enter Name : </label>
+            <input type="text" name="Name" id="Name"> 
+            <input type="submit" value="submit">
+        </form>
+        <hr>
+
+        <h2>Form - Select Element</h2>
+        <form action="#">
+            <label for="cars">Select a Car : </label>
+            <select name="cars" id="cars" size="3" multiple>
+                <option value="BMW" selected>BMW</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Toyota">Toyota</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+        <hr>
+
+        <h2>Form -  TextArea Element</h2>
+        <form action="#">
+            <textarea name="Message" id="Message" cols="30" rows="10" style="width:200px; height:auto;">
+                This is textarea Element of Form Element in HTML.
+            </textarea>
+        </form>
+        <hr>    
+
+        <h2>Form - Button Element</h2>
+        <button type="button" onclick="alert('Hello Rohit !!!')">Cliclk Me!!!</button>
+        <hr>
+
+        <h2>Form - Fieldset And Legend Element</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Persnol Information : </legend>
+                <label for="Fname">Enter First Name : </label>
+                <input type="text" name="Fname" id="Fname"> <br><br>
+                <label for="Lname">Enter Last Name : </label>
+                <input type="text" name="Lname" id="Lname"> <br><br>
+                <label for="Sname">Enter Surname : </label>
+                <input type="text" name="Sname" id="Sname"> <br><br>
+                <input type="submit" value="Submit">                
+            </fieldset>
+        </form>
+        <hr>
+
+        <h2>Form - Detailist Element</h2>
+        <form action="#">
+            <label for="Cars">Enter Your Favorite Car : </label>
+            <input list="Cars">
+            <datalist id="Cars">
+                <option value="BMW - M5"></option>
+                <option value="Honda - Civic"></option>
+                <option value="Scoda - Superb"></option>
+                <option value="Ford - Mustang"></option>
+                <option value="Dodge - Charger"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h2>Form - Output Element</h2>
+        <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" name="a" id="a" value="50">
+            100 + 
+            <input type="number" name="b" id="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+
+            <input type="submit">
+        </form>
+        <hr><hr>
+
+        <h2>Here we completed all Form Elements</h2>
+        <hr><hr>
+    </body>
+</html>

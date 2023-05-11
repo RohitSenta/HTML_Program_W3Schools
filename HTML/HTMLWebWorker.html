@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page - Web Workers</title>
+        <link rel="icon" href="FaviconR.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HTML - Web Workers</h1>
+        <hr><hr>
+
+        <p>Count Numbers : <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+        
+        <script>
+            var w;
+
+            function startWorker() {
+                if(typeof(Worker) !== "undefined") {
+                    if (typeof(w) == "undefined") {
+                        w = new Worker("demo_workers.js");
+                    }
+                    w.onmessage = function(event) {
+                        document.getElementById("result").innerHTML = event.data;
+                    };  
+                } else {
+                    document.getElementById("result").innerHTML = "Sorry, Your browser does not support Web Workers...";
+                }
+            }
+            function stopWorker() {
+                w.terminate();
+                w = undefined;
+            }
+        </script>
+        <hr><hr>
+
+        <h2>Here we completed Web Workers currently it does not works. we will see it in JavaScript.</h2>
+        <hr><hr>
+        
+    </body>
+</html>

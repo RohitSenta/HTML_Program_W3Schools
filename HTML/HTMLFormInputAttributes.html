@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page - Form Input Attribute</title>
+        <link rel="icon" href="RightArrow.gif">
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="45">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <h1>HTML Form - Input Attributes</h1>
+        <hr><hr><hr>
+
+        <h3>Input Attribute - Value and Readonly Attribute</h3>
+        <form action="#">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" value="Rohit"> 
+            <br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" name="lname" id="lname" value="Senta" readonly>
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Disabled Attribute</h3>
+        <form action="#">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" value="Rohit"> 
+            <br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" name="lname" id="lname" value="Senta" disabled>
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Size and Maxlength Attribute</h3>
+        <form action="#">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" value="Rohit"> 
+            <br><br>
+            <label for="pin">PIN: </label>
+            <input type="text" name="pin" id="pin" size="4" maxlength="4">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Min and Max Attribute </h3>
+        <form action="#">
+            <label for="datemax">Enter Date before 01-05-2023 : </label>
+            <input type="date" name="datemax" id="datemax" max="2023-05-01">
+            <br><br>
+            <label for="datemin">Enter date After 01-01-2000 : </label>
+            <input type="date" name="datemin" id="datemin" min="2000-01-01">
+            <br><br>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <br><br>
+            <input type="submit">
+        </form> 
+        <hr>
+
+        <h3>Input Attribute - List Multiple Attribute </h3>
+        <form action="#">
+            <label for="car">Select your car : </label>
+            <select name="car" id="car" size="3" value="BMW" multiple>
+                <option value="BMW">BMW</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Honda">Honda</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Pattern Attribute</h3>
+        <form action="#">
+            <label for="country_code">Country Code: </label>
+            <input type="text" name="country_code" id="country_code" pattern="[A-Za-z]{3}" title="Three latter country code"> 
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - PlaceHolder</h3>
+        <form>
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3} [0-9]{2} [0-9]{3}">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Required Attribute</h3>
+        <form action="#">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" required> 
+            <br><br>
+            <label for="pswd">Password: </label>
+            <input type="password" name="pswd" id="pswd" required>
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Step Attribute</h3>
+        <form action="#">
+            <label for="Quantiy">Enter Quantiy (0 - 30) : </label>
+            <input type="number" name="Quantiy" id="Quantiy" min="0" max="30" value="6" step="3">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - AutoFocus Attribute</h3>
+        <form action="#">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" autofocus> 
+            <br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" name="lname" id="lname">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - Heigth and Width Attribute</h3>
+        <form action="#">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" autofocus> 
+            <br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" name="lname" id="lname">
+            <br><br>
+            <input type="image" src="RightArrow.gif" alt="Submit Button" height="40" width="40">
+        </form>
+        <hr>
+
+        <h3>Input Attribute - AutoComplate Attribute</h3>
+        <form action="#" autocomplete="on">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname"> 
+            <br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" name="lname" id="lname">
+            <br><br>
+            <label for="email">Enter your Email: </label>
+            <input type="email" name="email" id="email" autocomplete="off">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr><hr>
+
+        <h2>Here we completed HTML Form Input Attributes</h2>
+        <hr><hr>
+    </body> 
+</html>

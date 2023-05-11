@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page - Canvas</title>
+        <link rel="icon" href="RightArrow.gif">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>HTML - Canvas</h1>
+        <hr><hr>
+
+
+        <h3>Empty Ractangle Canvas</h3>
+        <canvas id="myCanvas" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+        <hr>
+        
+
+        <h3>Canvas - Drow Diagonal Line</h3>
+        <canvas id="myCanvas1" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas1");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(300,150);
+            ctx.stroke();
+        </script>
+        <hr>
+
+
+        <h3>Canvas - Drow Circle</h3>
+        <canvas id="myCanvas2" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas2");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(150, 75, 50, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+        <hr>
+
+
+        <h3>Canvas - Drow Text</h3>
+        <canvas id="myCanvas3" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas3");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText ("Hello World", 10, 50);
+        </script>
+        <hr>
+
+
+        <h3>Canvas - Stroke Text</h3>
+        <canvas id="myCanvas4" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas4");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText ("Hello World", 10, 50);
+        </script>
+        <hr>
+
+
+        <h3>Canvas - Drow Linear Gradient</h3>
+        <canvas id="myCanvas5" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas5");
+            var ctx = c.getContext("2d");
+
+            // create gradient 
+            var grd = ctx.createLinearGradient(0, 0, 280, 0);
+            grd.addColorStop(0, "Blue");
+            grd.addColorStop(1, "white");
+
+            // fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 280, 130);
+        </script>
+        <hr>
+
+
+        <h3>Canvas - Drow Linear Gradient</h3>
+        <canvas id="myCanvas6" width="300" height="150" style="border: 1px inset black;">
+            This is Empty Canvas
+        </canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas6");
+            var ctx = c.getContext("2d");
+
+            // create gradient 
+            var grd = ctx.createLinearGradient(150, 80, 20, 150, 100, 100);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "Blue");
+
+            // fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 280, 130);
+        </script>
+        <hr>
+
+        <h3>Canvas - Drow Image</h3>
+        <p>Image to Use: </p>
+        <img id="FavR" src="HTMLlogo.png" alt="image of R" width="100" height="100">
+
+        <p>Canvas to Fill: </p>
+        <canvas id="myCanvas7" width="250" height="260" style="border:1px inset black;">
+            canvas for drow image
+        </canvas>
+        <p><button onclick="myCanvas7()">Click Me !</button></p>
+
+        <script>
+            function myCanvas7() {
+                var c = document.getElementById("myCanvas7");
+                var ctx = c.getContext("2d");
+                var img = document.getElementById("FavR");
+                ctx.drawImage (img, 10, 20);
+            }
+        </script>
+        <hr><hr>
+
+        <h2>Here we completed add the Canvas Function</h2>
+        <hr><hr>
+        
+    </body>
+</html>

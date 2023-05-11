@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page - Media - Video</title>
+        <link rel="icon" href="Faviconstar.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="border: 2px inset black;">
+        <h1>HTML - Media - Video</h1>
+        <hr><hr>
+
+        <h3>Media - Video Element</h3>
+        <video width="420" >
+            <source src="Video.mp4" type="video/mp4">
+            <source src="Video.ogg" type="video/ogg">
+        </video>
+        <hr>
+
+        <h3>Media - Video Element with Controls and Autoplay and Muted</h3>
+        <video width="420" controls autoplay muted>
+            <source src="Video.mp4" type="video/mp4">
+            <source src="Video.ogg" type="video/ogg">
+        </video>
+        <hr>
+
+        <h3>Media Video - Methods, Properties and Events Using JavaScript</h3>
+        <div style="text-align:center;">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video1" width="420">
+                <source src="Video.mp4" type="video/mp4">
+                <source src="Video.ogg" type="video/ogg">
+            </video>
+        </div>
+
+        <script>
+            var myVideo = document.getElementById("video1");
+
+            function playPause() {
+                if (myVideo.paused){
+                    myVideo.play();
+                } else {
+                    myVideo.pause();
+                }
+            }
+            function makeBig() {
+                myVideo.width = 560;
+            }
+            function makeSmall() {
+                myVideo.width = 320;
+            }
+            function makeNormal() {
+                myVideo.width = 420;
+            }
+        </script>
+
+        <p>Video courtesyof <a href="https://peach.blender.org/" target="_blank">Big Buck Bunny</a></p>
+        <hr><hr>
+    
+        <h2>Here we completed Media - Video Element</h2>
+        <hr><hr>
+
+    </body>
+</html>

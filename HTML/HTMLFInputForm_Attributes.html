@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page - Input From* Attributes</title>
+        <link rel="icon" href="Favicon1.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>HTML - Input From* Attributes</h1>
+        <hr><hr>
+
+        <h3>Form Attribute</h3>
+        <form action="#" id="form1">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="form">
+            <br><br>
+            <input type="submit">
+        </form>
+        <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" form="form1">
+        <hr>
+
+        <h3>FormAction Attribute</h3>
+        <form action="#">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname" id="surname">
+            <br><br>
+            <input type="submit">
+            <input type="submit" formaction="#" value="Submit as a Admin">
+        </form>
+        <hr>
+
+        <h3>FromEnctype Attribute</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <input type="submit">
+            <input type="submit" formenctype="multipart/form-data" value="Submit as a Mutipart/form-data">
+        </form>
+        <hr>
+
+        <h3>FormMethod Attribute</h3>
+        <form action="#" method="get">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname" id="surname">
+            <br><br>
+            <input type="submit" value="Submit using GET">
+            <input type="submit" formmethod="post" value="Submit using POST">
+        </form>
+        <hr>
+
+        <h3>FormTarget Attribute</h3>
+        <form action="#" method="get">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname" id="surname">
+            <br><br>
+            <input type="submit">
+            <input type="submit" formtarget="_blank" value="Submit to new window/tab">
+        </form>
+        <hr>
+
+        <h3>FormNovalidate Attribute</h3>
+        <form action="#">
+            <label for="email">Enter Email: </label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <input type="submit">
+            <input type="submit" formnovalidate="formnovalidate" value="Submit without Validation">
+        </form>
+        <hr><hr>
+
+        <h2>Here we completed Input Form* Attributes</h2>
+        <hr><hr>
+
+    </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page - Form Input Types</title>
+        <link rel="icon" href="Faviconstar.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <h1>HTML Form - Input Types</h1>
+        <hr><hr><hr>
+
+        <h3>There are Different Types of Input is :</h3>
+        <ol>
+            <li>button</li>
+            <li>checkbox</li>
+            <li>color</li>
+            <li>date</li>
+            <li>datetime-local</li>
+            <li>email</li>
+            <li>file</li>
+            <li>hidden</li>
+            <li>image</li>
+            <li>month</li>
+            <li>number</li>
+            <li>password</li>
+            <li>radio</li>
+            <li>range</li>
+            <li>reset</li>
+            <li>search</li>
+            <li>submit</li>
+            <li>tel</li>
+            <li>text</li>
+            <li>time</li>
+            <li>url</li>
+            <li>week</li>
+        </ol>
+        <hr>
+
+        <h3>Form - Input Type - Text and Submit</h3>
+        <form action="#">
+            <label for="name">Enter name : </label>
+            <input type="text" name="name" id="name"> 
+            <br><br>
+            <label for="surname">Enter surname : </label>
+            <input type="text" name="surname" id="surname">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>From - Input Type - Password and Submit</h3>
+        <form action="#">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username">
+            <br><br>
+            <label for="pswd">Password: </label>
+            <input type="password" name="pswd" id="pswd">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Reset</h3>
+        <form action="#">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname" id="surname">
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Radio</h3>
+        <form action="#">
+            <input type="radio" name="fav_language" id="html" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" name="fav_language" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" name="fav_language" id="js">
+            <label for="js">JavaScript</label>
+            <br>
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Checkbox</h3>
+        <form action="#">
+            <input type="checkbox" name="car1" id="car1" value="Mustang GT">
+            <label for="car1">I have a Mustage GT</label>
+            <br><br>
+            <input type="checkbox" name="car2" id="car2" value="M5 Compitition">
+            <label for="car2">I have a M5 Compitition</label>
+            <br><br>
+            <input type="checkbox" name="car3" id="car3" value="Charger">
+            <label for="car3">I have a Supra</label>
+            <br>
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Button</h3>
+        <p>Button for Alart Massage</p>
+        <form action="#">
+            <input type="button" onclick="alert('Hello World !')" value="Click Me !!!">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Color</h3>
+        <form action="#">
+            <label for="favcolor">Select your favorite color : </label>
+            <input type="color" name="favcolor" id="favcolor" value="#aa0000">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Date</h3>
+        <form action="#">
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+            <br><br>
+
+            <label for="datemax">Enter Date before 01-05-2023 : </label>
+            <input type="date" name="datemax" id="datemax" max="2023-05-01">
+            <br><br>
+            <label for="datemin">Enter date After 01-01-2000 : </label>
+            <input type="date" name="datemin" id="datemin" min="2000-01-01">
+            <br><br>
+            <input type="submit">
+        </form> 
+        <hr>
+
+        <h3>From - Input Type - Datetime-Local</h3>
+        <form action="#">
+            <label for="birthdaytime">Birthday Date and Time : </label>
+            <input type="datetime-local" name="birthdaytime" id="birthdaytime"> 
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>From - Input Type - Email</h3>
+        <form action="#">
+            <label for="email">Enter your Email: </label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>From - Input Type - Image</h3>
+        <form action="#">
+            <input type="image" src="Phone.png" alt="Mobile Phone" height="400">
+        </form>
+        <hr>
+
+        <h3>From - Input Type - File</h3>
+        <form action="#">
+            <label for="myfile">Select a File: </label>
+            <input type="file" name="myfile" id="myfile">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>From - Input Type - Hidden</h3>
+        <form action="#">
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname">
+            <br><br>
+            <input type="hidden" name="custid" id="custid" value="45">
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Month</h3>
+        <form action="#">
+            <label for="birthdaymonth">Birthday Month and Year : </label>
+            <input type="month" name="birthdaymonth" id="birthdaymonth">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr> 
+
+        <h3>From - Input Type - Number</h3>
+        <form action="#">
+            <label for="Quantiy">Enter Quantiy (0 - 100) : </label>
+            <input type="number" name="Quantiy" id="Quantiy" min="0" max="100" value="5" step="5">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>From - Input Type - Search</h3>
+        <form action="#">
+            <label for="gsearch">Google Search: </label>
+            <input type="search" name="gsearch" id="gsearch">
+            <br><br>
+            <input type="submit" value="Enter">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - Tel</h3>
+        <form action="#">
+            <label for="phone">Enter your phone number : </label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+
+        <h3>Form - Input Type - URL</h3>
+        <form action="#">
+            <label for="homepage">Add your Homepage</label>
+            <input type="url" name="homepage" id="homepage">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr>
+        
+        <h3>Form - Input Type - Week</h3>
+        <form action="#">
+            <label for="week">Select a Week : </label>
+            <input type="week" name="week" id="week">
+            <br><br>
+            <input type="submit">
+        </form>
+        <hr><hr>
+
+        <h2>Here we completed all Form - Input Types </h2>
+        <hr><hr>
+    </body>
+</html>

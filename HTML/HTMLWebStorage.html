@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page - Web Storage</title>
+        <link rel="icon" href="FaviconR.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function clickCounter() {
+                if (typeof(Storage) !== "undefined"){
+                    if (localStorage.clickcount){
+                        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                    } else {
+                        localStorage.clickcount = 1;
+                    } 
+                    document.getElementById("result1").innerHTML = "You have clicked the Button " +
+                    localStorage.clickcount + "time(s).";
+                } else {
+                    document.getElementById("result1").innerHTML = "Sorry, Your browser is not support web storage...";
+                }
+            }
+
+            function clickCounter1() {
+                if (typeof(Storage) !== "undefined"){
+                    if(sessionStorage.clickcount) {
+                        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                    } else {
+                        sessionStorage.clickcount = 1;
+                    }
+                    document.getElementById("result2").innerHTML = "You have clicked the Button " +
+                    sessionStorage.clickcount + "time(s).";
+                } else {
+                    document.getElementById("result2").innerHTML = "Sorry, Your browser is not support web storage...";
+                }
+            }
+        </script>
+        
+    </head>
+
+    <body>
+        <h1>HTML - Web Storage</h1>
+        <hr><hr>
+        
+        <h3>localStorage Object</h3>
+        <div id="result"></div>
+        <script>
+            // check browser support 
+            if(typeof(Storage) !== "undefined") {
+                //store
+                localStorage.setItem("name", "Rohit Senta");
+                //Retrieve
+                document.getElementById("result").innerHTML = localStorage.getItem("name");
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, Your browser does not support web storage...";
+            }
+        </script>
+        <hr>
+
+
+        <h4>
+            The following example counts the number of times a user has clicked a button. In this code the value string is converted to a number to be able to increase the counter:
+        </h4>
+        <p><button onclick="clickCounter()" type="button">Click Me!</button></p>
+        <div id="result1"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab/window, and try again, the counter will continue to count not reset.</p>
+        <hr>
+
+
+        <h3>sessionStorage Object</h3> 
+        <p>
+            The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. <br>
+            The data is deleted when the user closes the specific browser tab.
+        </p>
+        <p><button onclick="clickCounter1()" type="button">Click Me!</button></p>
+        <div id="result2"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+        <hr><hr>
+
+        <h2>Here we completed Web Storage</h2>
+        <hr><hr>
+
+    </body>
+</html>

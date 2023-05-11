@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page - HTML ID</title>
+        <style>
+            #HtmlID {
+                color: brown;
+                border: 4px outset black;
+                background-color: rgb(162, 208, 250);
+            }
+            #id {
+                color: black;
+                background-color: tomato;
+                border: 4px inset white;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1 id="id">HTML - ID</h1>
+
+        <h3>
+            The HTML id attribute is used to specify a unique id for an HTML element.<br>
+            You cannot have more than one element with the same id in an HTML document.<br>
+        </h3>
+
+        <h2 id="HtmlID">This is Header - 2</h2>
+
+        <div>
+            The id attribute specifies a unique id for an HTML element.<br>
+            The value of the id attribute must be unique within the HTML document.<br>
+            <br>
+            The id attribute is used to point to a specific style declaration in a style sheet.<br>
+            It is also used by JavaScript to access and manipulate the element with the specific id.<br>
+            <br>
+            The syntax for id is: write a hash character (#), followed by an id name.<br>
+            Then, define the CSS properties within curly braces {}.<br><br>
+        </div>
+        <hr><hr><hr>
+
+
+        <h2>ID Attribute in JavaScript</h2>
+
+        <h23>Using The id Attribute in JavaScript</h3>
+        <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+        <h1 id="IDinJS">Hello World !!!</h1>
+        <button onclick="displayResult()">Change Text</button>
+        <br>
+
+        <script>
+            function displayResult() {
+                document.getElementById("IDinJS").innerHTML = "Have a Nice Day !!!";
+            }
+        </script>
+
+        <br><hr><hr><hr>
+
+    </body> 
+</html>

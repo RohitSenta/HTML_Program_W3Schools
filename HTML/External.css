@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(255, 243, 211);
+    border: 2px inset rgb(150, 149, 150);
+}
+h1 {
+    color: purple;
+}
+h2 {
+    color: rgb(15, 17, 147);
+    background-color: rgba(100, 120, 75, 0.742);
+}
+h3 {
+    color: crimson;
+}
+p {
+    background-color: rgb(149, 189, 78);
+}

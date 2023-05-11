@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page - Layout</title>
+        <link rel="icon" type="image/x-icon" href="LigthOff.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* style the header */
+            header {
+                background-color: #ad6464;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                background-color: #f4c06b;
+                padding: 20px;
+            }
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0px;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #70befe;
+                height: 300px;
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+
+            }
+            /* Style the footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, artical {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2>CSS Layout Float</h2>
+        <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+        <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>   
+
+        <header>Gujarat</header>
+
+        <section>
+            <nav>
+                <ol>
+                    <li><a href="#">Surat</a></li>
+                    <li><a href="#">Ahmedabad</a></li>
+                    <li><a href="#">Bhavnagar</a></li>
+                </ol>
+            </nav>
+
+            <article>
+                <h1>Surat</h1>
+                <p>Surat is known across the world as the “Diamond City.” It has a reputation for being one of the cleanest cities in the state. Surat
+                    also ranks among India's cleanest cities. <br>Surat is also noted for being a spectacular location that draws a significant number of
+                    visitors. Surat produces 40% of all manmade fabrics in the country. Surat residents have arts and crafts experience and talents. Let's read more about it.</p>
+            </article>
+        </section>
+
+        <footer>
+            Hello Surat !!!
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Web Page - Table Padding-Spacing and Colsan-Rowspan</title>
+        <link rel="icon" type="image/x-icon" href="FaviconWorld.ico">
+        <style>
+            table, th, td {
+                border: 2px ridge black;
+                border-spacing: 20px;
+            }
+            th {
+                font-size: 30px;
+                padding: 20px;
+                color: rgb(224, 52, 52);
+                border: 4px ridge black;
+                background-color: rgb(178, 185, 235);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>HTML Table - Table Padding-Spacing and Colsan-Rowspan</h1>
+        <h2>Table With Horizontal Header</h2>
+
+        <table style="width:100%">
+
+            <tr>
+                <th style="width: 40%;">Name</th>
+                <th colspan="2">Department</th>
+        
+            </tr>
+            <tr>
+                <td>Rohit Senta</td>
+                <td>Elelctrical Engineering</td>
+                <td style="width: 30%;">5th Sem</td>
+            </tr>
+            <tr>
+                <td>Himanshu Vaghasiya</td>
+                <td>Mechanical Engineering</td>
+                <td>7th Sem</td>
+            </tr>
+            <tr>
+                <td>Nilesh Paswan</td>
+                <td>Civil Engineering</td>
+                <td>5th Sem</td>
+            </tr>
+            <tr>
+                <td>Ramesh Vadher</td>
+                <td>Elelctrical Engineering</td>
+                <td>3rd Sem</td>
+            </tr>
+
+        </table>
+        <br><br><hr><hr><hr><br>
+
+        
+        <h2>Table with Vertical Header</h2>
+        <table style="width: 100%;">
+        
+            <tr>
+                <th rowspan="2" style="width: 40%;">First Name</th>
+                <td style="width: 20%;">Rohit</td>
+                <td style="width: 20%;">Parth</td>
+                <td style="width: 20%;">Nikhil</td>
+            </tr>
+            <tr>
+                
+                <td>Senta</td>
+                <td>Makwana</td>
+                <td>Gangani</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>25</td>
+                <td>27</td>
+                <td>26</td>
+            </tr>
+
+        </table>
+    </body>  
+</html>

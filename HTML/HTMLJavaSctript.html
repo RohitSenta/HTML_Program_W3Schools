@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page - HTML JavaScript</title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <h1>HTML - JavaScript</h1>
+
+        <h4 style="background-color: rgb(185, 203, 255);">
+            The HTML Script tag is used to define a client-side script (JavaScript).<br>
+            The Script element either contains script statements, or it points to an external script file through the src attribute.<br>
+            Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.<br>
+            To select an HTML element, JavaScript most often uses the document.getElementById() method.<br>
+            This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":<br>
+        </h4>
+        <hr><hr><hr>
+
+        <h2>To Show Time And Date By Press This Button by Using JavaScript</h2>
+        <button type="button" onclick="document.getElementById('Demo').innerHTML = Date()">
+            Click Me to Display Date and Time
+        </button>
+
+        <p id="Demo"></p>
+        <hr><hr><hr>
+
+
+
+        <h2>JavaScript can change the content of an HTML element:</h2>
+        <button type="button" onclick="myFunction()">Click Here !!</button>
+        <p id="SecondDemo">Hello World !</p>
+
+        <script>
+            function myFunction(){
+                document.getElementById('SecondDemo').innerHTML = "Hello JavaScript !!!";
+            }
+        </script>
+        <hr><hr><hr>
+
+
+
+        <h2>JavaScript Style Change</h2>
+        <p id="OtherDemo">JavaScript Can Change The Style of HTML Element</p>
+
+        <script>
+            function myOtherFunction() {
+                document.getElementById('OtherDemo').style.fontSize = "30px";
+                document.getElementById('OtherDemo').style.color = "blue";
+                document.getElementById('OtherDemo').style.backgroundColor = "orange";
+            }
+        </script>
+
+        <button type="button" onclick="myOtherFunction()">Click Me!!</button>
+        <hr><hr><hr>
+
+
+
+        <h2>JavaScript Can Change Attributes </h2>
+
+        <script>
+            function light(sw) {
+                var pic;
+                if(sw == 0){
+                    pic = "LigthOff.png"
+                } else {
+                    pic = "LigthOn.png"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+
+        <img id="myImage" src="LigthOff.png" width="100" height="180">
+
+        <p>
+            <button type="button" onclick="light(1)">Ligth On</button>
+            <button type="button" onclick="light(0)">Ligth Off</button>
+        </p>
+        <hr><hr><hr>
+
+
+    </body>
+</html>

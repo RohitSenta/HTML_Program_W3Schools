@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <title>My Web Page - Links</title>
+    
+    <head>
+        <style>
+            body {background-color:lightcyan ;}
+            h1   {color: purple;}
+            h2   {color: rgb(254, 106, 106);}
+            h3   {background-color: rgb(242, 185, 150);}
+            h4   {background-color: rgb(138, 186, 26);}
+            p    {background-color: rgb(204, 150, 255);}
+        </style>
+    </head>
+
+    <body>
+        <h1>HTML - Links/Hyperlinks</h1>
+        <hr><hr>
+
+        <h2>Links</h2>
+        <h3>
+            a - tag is used for HTML - hyperlinks/links<br>
+            href - attribute is used in a tag for indicating link destination<br> 
+        </h3>
+        <b><a href="https://www.w3schools.com/default.asp">Visit W3Schools !!!</a></b>
+        <br><br><hr><hr>
+
+
+        <h2>Links - Target Attribute </h2>
+        <h3>
+            _self - Default. Opens the document in the same window/tab as it was clicked<br>
+            _blank - Opens the document in a new window or tab<br>
+            _parent - Opens the document in the parent frame<br>
+            _top - Opens the document in the full body of the window.
+            <p> Here we used - _blank target to open link in new window/tab</p>
+        </h3>
+        <b><a href="https://www.youtube.com/" target="_blank">Visit YouTube !!!</a></b>
+        <br><br><hr><hr><br>
+
+
+        <h2>Absolute URL's and Relative URL's </h2>
+        <h3>
+            Absolute links - full web address is given in href attribute<br>
+            Relative links - is a Local link within a same web site and not full web address is given (without - https://www part)
+            <p> Here we used both types links - Absolute links and Relative links</p>
+        </h3>
+        <h4>Absolute links</h4>
+        <b><a href="https://www.youtube.com/" target="_blank">Visit YouTube !!!</a></b><br><br>
+        <b><a href="https://www.google.com/maps" target="_blank">Visit GoogleMap !!!</a></b><br>
+
+        <h4>Relative link</h4>
+        <b><a href="External.css" target="_blank">CSS File</a></b>
+        <br><br><hr><hr><br>
+
+
+        <h2>Use Image as Link</h2>
+        <h3>
+            For use image as a link add img - tag inside a - tag<br>
+            Also use attribute of img tag sre for sourse of image file alt for alternative text for image and width and height as per requirement  
+            <p> Here we used HTML Logo image for HTML tutorial site</p>
+        </h3>
+        <a href="https://www.w3schools.com/" target="_blank">
+            <img src="HTMLlogo.png" alt="HTML Tutorial" style="width:50px;height:50px;">
+        </a>
+        <br><br><hr><hr><br>
+
+
+        <h2>Link to Email Address</h2>
+        <h3>
+            For open your mail program to send email use - mailto:emailid@gmail.com in href attribute 
+            <p> Here we used - rohitsenta@gmail.com mail id</p>
+        </h3>
+        <b><a href="mailto:rohitsenta@gmail.com" target="_blank">Send Email !!!</a></b>
+        <br><br><hr><hr><br>
+
+
+        <h2>Button as a Link</h2>
+        <h3>
+            For use button as link use JavaScript code - oneclick and add button element
+            <p> Here we added onclick and button element</p>
+        </h3>
+        <button onclick="document.location='https://www.w3schools.com/'">Visit W3Schools !!!</button>
+        <br><br><hr><hr><br>
+
+
+        <h2>Link Title - Tooltip</h2>
+        <h3>
+            For know extra information about link use - title attribute in a - element
+            <p> Here we added oneclick and button element</p>
+        </h3>
+        <b><a href="https://www.w3schools.com/html/default.asp" title="Go to W3Schools HTML Section">Visit HTML Tutorial !!!</a></b>
+        <br><br><hr><hr><br>
+
+    </body>
+</html> 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page - Responsive</title>
+        <link rel="icon" type="image/x-icon" href="FaviconR.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .left {
+                background-color: #2196F3;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+            .main {
+                background-color: #ffc0c0;
+                padding: 20px;
+                float: left;
+                width: 45%;
+            }
+            .right {
+                background-color: #04AA6D;
+                padding: 20PX;
+                float: left;
+                width: 20%;
+            }
+            @media screen and (max-width: 800px) {
+                .left, .main, .right {
+                    width: 100%;
+                }
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .menu {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+            .menu a {
+                background-color: #dcc0a6;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+                width: 100%;
+                color: black;
+            }
+            .main1 {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+            .right1 {
+                background-color: #755884;
+                float: left;
+                width: 20%;
+                padding: 15px;
+                margin-top: 7px;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 800px){
+                .menu .main1 .right1 {
+                    width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>HTMl - Responsive</h1>
+        <p>Html - Responsive is work for to display content of website in differnt device as per Device width</p>
+        <hr><hr>
+
+
+        <h2>Responsive Image</h2>
+        <img src="547-9.png" alt="Squirrel" style="width:20%; max-width:100%;">
+        <hr><hr>
+
+        <h2>Defferent Images Dipending on Browser Width</h2>
+        <picture>
+            <source srcset="HTMLlogo.png" media="(max-width:600px)">
+            <source srcset="img_girl.jpeg" media="(max-width:1500px)">
+            <source srcset="Phone.png">
+            <img src="img_girl.jpeg" alt="Girl" style="width: auto;">
+        </picture>
+        <hr><hr>
+    
+
+        <h2>Media Queries</h2>
+        <p>
+            In addition to resize text and images, it is also common to use media queries in responsive web pages.<br>
+            With media queries you can define completely different styles for different browser sizes.<br>
+            Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stack vertically on small screens:<br>
+        </p>
+
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+
+        <div class="main">
+            <p>Main Content</p>
+        </div>
+
+        <div class="right">
+            <p>Right Content</p>
+        </div>
+        
+        <br><br><br><br><br><br>
+
+        <hr><hr>
+        <h2>Responsive - Web Page</h2>
+        <p>A responsive web page should look good on large desktop screens and on small mobile phones.</p>
+        
+        <div style="font-family: verdana; color: #aaaaaa;">
+            <div style="background-color: #586d7c; padding: 15px; text-align: center;">
+                <h1>Hello World</h1>
+            </div>
+
+            <div style="overflow: auto;">
+
+                <div class="menu">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </div>
+
+                <div class="main1" style="color: #b09f9f;  margin-top: 7px;">
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorem assumenda rem ex! Nesciunt in vel odio recusandae quia natus pariatur officia?
+                        Aspernatur accusantium architecto molestiae pariatur provident quasi reprehenderit impedit.
+                    </p>
+                </div>
+
+                <div class="right1">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio.</p>
+                </div>
+
+            </div>
+            
+            <div style="background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
+                © copyright w3schools.com
+            </div>
+        
+        </div>
+        <br><hr><hr>
+    </body>
+</html>

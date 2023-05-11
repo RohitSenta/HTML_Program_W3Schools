@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page - GeoLocation</title>
+        <link rel="icon" href="FaviconWorld.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h3>HTML - GeoLocation</h3>
+        <hr><hr>
+
+        <h3>GeoLocation - Get Your Location</h3>
+        <p>getCurrentPosition() - Method is used to return the User's Position</p>
+        <p>Click the Button to get your Coordinates:</p>
+
+        <button onclick="getLocation()">Get Location</button>
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "GeoLocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+        <hr><hr>
+        
+
+        
+        <h3>GeoLocation - Handling Errors and Rejections</h3>
+        <p>The second parameter of the getCurrentPosition() method is used to handle errors.</p>
+        <p>Click the Button to get your Coordinates:</p>
+
+        <button onclick="getLocation1()">Get Location</button>
+        <p id="demo1"></p>
+
+        <script>
+            var x = document.getElementById("demo1");
+
+            function getLocation1() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition1, showError);
+                } else {
+                    x.innerHTML = "GeoLocation is not supported by this browser.";
+                }
+            }
+            function showPosition1(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude; 
+            }
+
+            function showError(error) {
+                switch(error.code) {
+                    case error.PERMISSION_DENIED:
+                        x.innerHTML = "User denied the request for GeoLocation";
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        x.innerHTML = "Location information is unavailable";
+                        break;
+                    case error.TIMEOUT:
+                        x.innerHTML = "The request to get user location timeout";
+                        break;
+                    case error.UNKNOWN_ERROR:
+                        x.innerHTML = "An unknown erroe occurred";
+                        break;
+                }
+            }
+        </script>
+        <hr><hr>
+
+        
+        <h3>GeoLocation Object - Other Intresting Methods</h3>
+        <p>
+            watchPosition() - Returns the current position of the user and continues to return updated position as the user moves (like the GPS in a car).
+            <br>
+            clearWatch() - Stops the watchPosition() method.
+        </p>
+        <p>Click the Button to get your Coordinates:</p>
+        
+        <button onclick="getLocation2()">Get Location</button>
+        <p id="demo2"></p>
+
+        <script>
+            var x = document.getElementById("demo2");
+
+            function getLocation2() {
+                if(navigator.geolocation){
+                    navigator.geolocation.watchPosition(showPosition2);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition2(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+        <hr><hr>
+
+        <h2>Here we completed GeoLocation</h2>
+        <hr><hr>
+    </body>
+</html>
